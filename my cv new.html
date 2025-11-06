@@ -1,0 +1,191 @@
+
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basham Khan - CV</title>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base font */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact; /* Ensures colors print in Chrome */
+            color-adjust: exact; /* Ensures colors print in Firefox */
+        }
+
+        /* Styles for printing */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #fff; /* Ensure white background for printing */
+            }
+            /* Hide the print button when printing */
+            #print-btn {
+                display: none;
+            }
+            /* Ensure the CV container takes full width and has no shadow */
+            .cv-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+                border: none;
+                border-radius: 0;
+            }
+            /* Ensure the two-column layout is preserved */
+            .cv-sidebar {
+                width: 33.333333%; /* Corresponds to md:w-1/3 */
+                background-color: #1f2937 !important; /* bg-gray-800 */
+                color: #fff !important;
+            }
+            .cv-main {
+                width: 66.666667%; /* Corresponds to md:w-2/3 */
+            }
+            /* Avoid page breaks inside sections */
+            .cv-section {
+                break-inside: avoid;
+            }
+        }
+
+        /* Set page size for printing */
+        @page {
+            size: A4;
+            margin: 1cm;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 md:p-10">
+
+    <div class="cv-container max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+        
+        <!-- Sidebar (Left Column) -->
+        <aside class="cv-sidebar md:w-1/3 bg-gray-800 text-gray-200 p-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-white">Basham Khan</h1>
+                <p class="text-lg text-gray-300">F/Name: Muhammad Ishaqe</p>
+                <p class="text-xl text-orange-400 mt-2">Creative & Technical Professional</p>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="mt-8">
+                <h2 class="text-2xl font-semibold text-white border-b-2 border-orange-400 pb-2 mb-4">Contact</h2>
+                <ul class="space-y-3">
+                    <!-- REPLACE with your real info -->
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.3 1.15a11.03 11.03 0 005.79 5.79l1.15-2.3a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>+92 300 1234567</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        <span>basham.khan@email.com</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-5 h-5 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <span>Quetta, Pakistan</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mt-8 cv-section">
+                <h2 class="text-2xl font-semibold text-white border-b-2 border-orange-400 pb-2 mb-4">Skills</h2>
+                <ul class="space-y-2 list-disc list-inside text-gray-300">
+                    <li>Web Designer</li>
+                    <li>Graphic Designer</li>
+                    <li>Content Writer</li>
+                    <li>Video Editor</li>
+                </ul>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="mt-8 cv-section">
+                <h2 class="text-2xl font-semibold text-white border-b-2 border-orange-400 pb-2 mb-4">Languages</h2>
+                <ul class="space-y-2 list-disc list-inside text-gray-300">
+                    <li>Balochi (Native)</li>
+                    <li>Sindhi (Fluent)</li>
+                    <li>Urdu (Fluent)</li>
+                    <li>English (Professional)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content (Right Column) -->
+        <main class="cv-main md:w-2/3 p-8 bg-white">
+            
+            <!-- Print Button (JavaScript) -->
+            <button id="print-btn" class="absolute top-8 right-8 bg-orange-500 text-white py-2 px-4 rounded-lg shadow hover:bg-orange-600 transition duration-200">
+                Print CV
+            </button>
+
+            <!-- Professional Summary Section -->
+            <section class="cv-section">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-gray-800 pb-2 mb-4">Professional Summary</h2>
+                <p class="text-gray-700 text-base leading-relaxed">
+                    A motivated and versatile fresh graduate with a BS in Sociology and a strong, self-taught foundation in web design, graphic design, content writing, and video editing. Eager to apply creative skills and sociological insights in a challenging entry-level role.
+                </p>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="mt-8 cv-section">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-gray-800 pb-2 mb-4">Experience</h2>
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">Fresh Graduate</h3>
+                    <p class="text-gray-600">As a fresh graduate, I am actively seeking an entry-level position to apply my diverse skill set in a professional environment. I am a quick learner, highly adaptable, and eager to contribute to a team's success.</p>
+                </div>
+            </section>
+
+            <!-- Qualification Section -->
+            <section class="mt-8 cv-section">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-gray-800 pb-2 mb-4">Qualification</h2>
+                
+                <!-- BS Sociology -->
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">BS Sociology</h3>
+                    <p class="text-lg text-gray-600">GPGC Degree College, Quetta</p>
+                    <p class="text-md text-gray-500 italic">Passing Year: 2024</p>
+                </div>
+
+                <!-- HSC -->
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">HSC (Higher Secondary)</h3>
+                    <p class="text-lg text-gray-600">Yousaf Aziz Magsi College</p>
+                    <p class="text-md text-gray-500 italic">Passing Year: 2018</p>
+                </div>
+
+                <!-- SSC -->
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold text-gray-700">SSC (Matriculation)</h3>
+                    <p class="text-lg text-gray-600">Govt. Boys High School, Gandawah</p>
+                    <p class="text-md text-gray-500 italic">Passing Year: 2016</p>
+                    <!-- Note: I've added 2016 as a logical placeholder year for SSC -->
+                </div>
+            </section>
+
+            <!-- Reference Section -->
+            <section class="mt-8 cv-section">
+                <h2 class="text-3xl font-bold text-gray-800 border-b-4 border-gray-800 pb-2 mb-4">Reference</h2>
+                <p class="text-gray-700 text-base">
+                    To be furnished on demand.
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- JavaScript for the Print Button -->
+    <script>
+        document.getElementById('print-btn').addEventListener('click', () => {
+            window.print();
+        });
+    </script>
+
+</body>
